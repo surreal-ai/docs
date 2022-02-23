@@ -1,0 +1,16 @@
+{
+  "name": "Docs",
+  "version": "1.0.0",
+  "description": "Surreal Engine Document",
+  "main": "index.js",
+  "repository": "git@github.com:surreal-ai/docs.git",
+  "author": "shonenada <shonenada@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+      "docs:dev": "vuepress dev docs",
+      "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.35"
+  }
+}
