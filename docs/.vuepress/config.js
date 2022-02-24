@@ -10,8 +10,7 @@ module.exports = {
     },
   },
   plugins: [
-    "tabs",
-    "@vuepress/back-to-top",
+    'tabs',
     ["@vuepress/last-updated", {
       transformer: (timestamp, lang) => {
         const dayjs = require("dayjs")
@@ -32,5 +31,8 @@ module.exports = {
     editLinkText: "Edit this page on GitHub",
     docsDir: "docs",
     sidebar: require("./sidebar.js"),
+    displayAllHeaders: true,
+    prevLink: true,
+    nextLink: true,
   },
 }

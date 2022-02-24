@@ -1,25 +1,25 @@
 module.exports = [
   {
-    text: "Overview",
+    title: "Overview",
     link: "/apis/overview",
   },
   {
-    text: "Usage Guide",
-    link: "/apis/guide",
+    title: "Usage Guide",
     children: [
-      "/apis/guide/get_start.md",
+      "/apis/guide/basic.md",
+      "/apis/guide/ratelimit.md",
+      "/apis/guide/quota.md",
     ],
   },
   {
-    text: "Reference",
-    link: "/apis/reference",
+    title: "Reference",
     children: [
       "/apis/reference/tts.md",
       "/apis/reference/a2v.md",
     ]
   },
   {
-    text: "Examples",
+    title: "Examples",
     link: "/apis/examples",
   },
 ]
