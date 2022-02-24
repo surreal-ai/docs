@@ -9,17 +9,17 @@ module.exports = {
       title: "Surreal Engine Developer",
     },
   },
-  plugins: {
-    "tabs": true,
-    "@vuepress/back-to-top": true,
-    "@vuepress/last-updated": {
+  plugins: [
+    "tabs",
+    "@vuepress/back-to-top",
+    ["@vuepress/last-updated", {
       transformer: (timestamp, lang) => {
         const dayjs = require("dayjs")
         dayjs.locale(lang)
         return dayjs(timestamp).format("YYYY-MM-DD HH:mm:ss")
       },
-    },
-  },
+    }]
+  ],
   markdown: {
     lineNumbers: false,
   },
