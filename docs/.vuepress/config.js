@@ -1,12 +1,12 @@
 module.exports = {
   lang: 'en-US',
-  title: 'Surreal Engine Developer Hub',
-  description: 'Surreal Engine Developer Hub',
+  title: 'Surreal Engine API',
+  description: 'Surreal Engine API',
   seviceWorker: true,
   locales: {
     "/": {
       lang: "en-US",
-      title: "Surreal Engine Developer",
+      title: "Surreal Engine API",
     },
   },
   plugins: [
@@ -31,5 +31,6 @@ module.exports = {
     editLinks: true,
     editLinkText: "Edit this page on GitHub",
     docsDir: "docs",
+    sidebar: require("./sidebar.js"),
   },
 }
