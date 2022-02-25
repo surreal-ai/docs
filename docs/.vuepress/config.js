@@ -1,12 +1,12 @@
 module.exports = {
   lang: 'en-US',
-  title: 'Surreal Engine API',
-  description: 'Surreal Engine API',
+  title: 'Surreal Engine API [alpha]',
+  description: 'Surreal Engine API [alpha]',
   seviceWorker: true,
   locales: {
     "/": {
       lang: "en-US",
-      title: "Surreal Engine API",
+      title: "Surreal Engine API [alpha]",
     },
   },
   plugins: [
