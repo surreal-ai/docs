@@ -1,8 +1,7 @@
 module.exports = [
   {
     title: "Overview",
-    collapsable: false,
-    link: "/apis/overview",
+    path: "/apis/overview/",
   },
   {
     title: "Usage Guide",
@@ -15,13 +14,15 @@ module.exports = [
   {
     title: "Reference",
     children: [
+      "/apis/reference/api-token.md",
       "/apis/reference/tts.md",
       "/apis/reference/a2v.md",
     ]
   },
+  /**
   {
     title: "Examples",
-    collapsable: false,
-    link: "/apis/examples",
+    path: "/apis/examples/",
   },
+  */
 ]
