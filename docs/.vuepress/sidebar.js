@@ -1,6 +1,7 @@
 module.exports = [
   {
     title: "Overview",
+    collapsable: false,
     link: "/apis/overview",
   },
   {
@@ -20,6 +21,7 @@ module.exports = [
   },
   {
     title: "Examples",
+    collapsable: false,
     link: "/apis/examples",
   },
 ]
