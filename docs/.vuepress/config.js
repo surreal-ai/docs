@@ -1,4 +1,5 @@
 module.exports = {
+  base: 'docs/',
   lang: 'en-US',
   title: 'Surreal Engine API [alpha]',
   description: 'Surreal Engine API [alpha]',
