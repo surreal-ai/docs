@@ -43,23 +43,23 @@ POST /v1/auth/account.login
 :::: tabs    cache-lifetime="10" :options="{ useUrlFragment: false }"
 
 ::: tab cURL
-<<< @/docs/apis/reference/snippets/curl/auth/account-login.sh
+<<< @/docs/reference/snippets/curl/auth/account-login.sh
 :::
 
 ::: tab Python
-<<< @/docs/apis/reference/snippets/python/auth/account_login.py
+<<< @/docs/reference/snippets/python/auth/account_login.py
 :::
 
 ::: tab Golang
-<<< @/docs/apis/reference/snippets/golang/auth/account_login.go
+<<< @/docs/reference/snippets/golang/auth/account_login.go
 :::
 
 ::: tab Javascript
-<<< @/docs/apis/reference/snippets/javascript/auth/account_login.js
+<<< @/docs/reference/snippets/javascript/auth/account_login.js
 :::
 
 ::: tab Java
-<<< @/docs/apis/reference/snippets/java/auth/account_login.java
+<<< @/docs/reference/snippets/java/auth/account_login.java
 :::
 
 ::::
