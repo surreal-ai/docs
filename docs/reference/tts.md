@@ -62,23 +62,23 @@ Require no arguments.
 :::: tabs    cache-lifetime="10" :options="{ useUrlFragment: false }"
 
 ::: tab cURL
-<<< @/docs/apis/reference/snippets/curl/tts/voice-list.sh
+<<< @/docs/reference/snippets/curl/tts/voice-list.sh
 :::
 
 ::: tab Python
-<<< @/docs/apis/reference/snippets/python/tts/voice_list.py
+<<< @/docs/reference/snippets/python/tts/voice_list.py
 :::
 
 ::: tab Golang
-<<< @/docs/apis/reference/snippets/golang/tts/voice_list.go
+<<< @/docs/reference/snippets/golang/tts/voice_list.go
 :::
 
 ::: tab Javascript
-<<< @/docs/apis/reference/snippets/javascript/tts/voice_list.js
+<<< @/docs/reference/snippets/javascript/tts/voice_list.js
 :::
 
 ::: tab Java
-<<< @/docs/apis/reference/snippets/java/tts/voice_list.java
+<<< @/docs/reference/snippets/java/tts/voice_list.java
 :::
 
 ::::
@@ -125,23 +125,23 @@ This returning `URL` refers to the generate voices
 :::: tabs    cache-lifetime="10" :options="{ useUrlFragment: false }"
 
 ::: tab cURL
-<<< @/docs/apis/reference/snippets/curl/tts/voice-generate.sh
+<<< @/docs/reference/snippets/curl/tts/voice-generate.sh
 :::
 
 ::: tab Python
-<<< @/docs/apis/reference/snippets/python/tts/voice_generate.py
+<<< @/docs/reference/snippets/python/tts/voice_generate.py
 :::
 
 ::: tab Golang
-<<< @/docs/apis/reference/snippets/golang/tts/voice_generate.go
+<<< @/docs/reference/snippets/golang/tts/voice_generate.go
 :::
 
 ::: tab Javascript
-<<< @/docs/apis/reference/snippets/javascript/tts/voice_generate.js
+<<< @/docs/reference/snippets/javascript/tts/voice_generate.js
 :::
 
 ::: tab Java
-<<< @/docs/apis/reference/snippets/java/tts/voice_generate.java
+<<< @/docs/reference/snippets/java/tts/voice_generate.java
 :::
 
 ::::

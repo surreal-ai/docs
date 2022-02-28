@@ -40,23 +40,23 @@ Require no arguments.
 :::: tabs    cache-lifetime="10" :options="{ useUrlFragment: false }"
 
 ::: tab cURL
-<<< @/docs/apis/reference/snippets/curl/a2v/character-list.sh
+<<< @/docs/reference/snippets/curl/a2v/character-list.sh
 :::
 
 ::: tab Python
-<<< @/docs/apis/reference/snippets/python/a2v/character_list.py
+<<< @/docs/reference/snippets/python/a2v/character_list.py
 :::
 
 ::: tab Golang
-<<< @/docs/apis/reference/snippets/golang/a2v/character_list.go
+<<< @/docs/reference/snippets/golang/a2v/character_list.go
 :::
 
 ::: tab Javascript
-<<< @/docs/apis/reference/snippets/javascript/a2v/character_list.js
+<<< @/docs/reference/snippets/javascript/a2v/character_list.js
 :::
 
 ::: tab Java
-<<< @/docs/apis/reference/snippets/java/a2v/character_list.java
+<<< @/docs/reference/snippets/java/a2v/character_list.java
 :::
 
 ::::
@@ -97,23 +97,23 @@ This API is **task API***.
 :::: tabs    cache-lifetime="10" :options="{ useUrlFragment: false }"
 
 ::: tab cURL
-<<< @/docs/apis/reference/snippets/curl/a2v/video-generate.sh
+<<< @/docs/reference/snippets/curl/a2v/video-generate.sh
 :::
 
 ::: tab Python
-<<< @/docs/apis/reference/snippets/python/a2v/video_generate.py
+<<< @/docs/reference/snippets/python/a2v/video_generate.py
 :::
 
 ::: tab Golang
-<<< @/docs/apis/reference/snippets/golang/a2v/video_generate.go
+<<< @/docs/reference/snippets/golang/a2v/video_generate.go
 :::
 
 ::: tab Javascript
-<<< @/docs/apis/reference/snippets/javascript/a2v/video_generate.js
+<<< @/docs/reference/snippets/javascript/a2v/video_generate.js
 :::
 
 ::: tab Java
-<<< @/docs/apis/reference/snippets/java/a2v/video_generate.java
+<<< @/docs/reference/snippets/java/a2v/video_generate.java
 :::
 
 ::::
@@ -150,23 +150,23 @@ This API is **Realtime API**.
 :::: tabs    cache-lifetime="10" :options="{ useUrlFragment: false }"
 
 ::: tab cURL
-<<< @/docs/apis/reference/snippets/curl/a2v/video-get.sh
+<<< @/docs/reference/snippets/curl/a2v/video-get.sh
 :::
 
 ::: tab Python
-<<< @/docs/apis/reference/snippets/python/a2v/video_get.py
+<<< @/docs/reference/snippets/python/a2v/video_get.py
 :::
 
 ::: tab Golang
-<<< @/docs/apis/reference/snippets/golang/a2v/video_get.go
+<<< @/docs/reference/snippets/golang/a2v/video_get.go
 :::
 
 ::: tab Javascript
-<<< @/docs/apis/reference/snippets/javascript/a2v/video_get.js
+<<< @/docs/reference/snippets/javascript/a2v/video_get.js
 :::
 
 ::: tab Java
-<<< @/docs/apis/reference/snippets/java/a2v/video_get.java
+<<< @/docs/reference/snippets/java/a2v/video_get.java
 :::
 
 ::::
