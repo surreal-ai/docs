@@ -14,7 +14,7 @@ func main() {
 
 	payload := strings.NewReader(`{
     "model_id": "eva_a0008",
-    "audio_url": "https://example.com/audio.mp3"
+    "audio_url": "https://example.com/audio.wav"
 }`)
 
 	client := &http.Client{}

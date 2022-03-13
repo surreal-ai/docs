@@ -3,5 +3,5 @@ curl -X POST 'https://openapi.surreal-ai.com/v1/a2v/video.generate' \
     -H 'Content-Type: application/json' \
     --data-raw '{
     "model_id": "eva_a0008",
-    "audio_url": "https://example.com/audio.mp3"
+    "audio_url": "https://example.com/audio.wav"
 }'

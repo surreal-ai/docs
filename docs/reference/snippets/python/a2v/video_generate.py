@@ -5,7 +5,7 @@ url = "https://openapi.surreal-ai.com/v1/a2v/video.generate"
 
 payload = json.dumps({
   "model_id": "eva_a0008",
-  "audio_url": "https://example.com/audio.mp3"
+  "audio_url": "https://example.com/audio.wav"
 })
 headers = {
   'Authorization': 'bee03bed6352400383d9a51ba325af2f',
