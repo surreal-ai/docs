@@ -138,7 +138,7 @@ This API is **Realtime API**.
   "code": 0,
   "data": {
     "video_id": "7895cd9a63564367b0c7b06e6837b5c6",
-    "video_url": "https://surreal.oss-accelerate.aliyuncs.com/audio/1490087da1c1476c8561fdc7b8a2fa4c.mp3"
+    "video_url": "https://surreal.oss-accelerate.aliyuncs.com/audio/1490087da1c1476c8561fdc7b8a2fa4c.wav"
   },
   "message": "success"
 }

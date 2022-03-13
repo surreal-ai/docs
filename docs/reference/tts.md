@@ -112,7 +112,7 @@ It will return the URL of generated audio.
 {
   "code": 0,
   "data": {
-    "url": "https://surreal.oss-accelerate.aliyuncs.com/audio/1490087da1c1476c8561fdc7b8a2fa4c.mp3"
+    "url": "https://surreal.oss-accelerate.aliyuncs.com/audio/1490087da1c1476c8561fdc7b8a2fa4c.wav"
   },
   "message": "success"
 }
