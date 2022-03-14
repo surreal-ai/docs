@@ -24,7 +24,7 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-	req.Header.Add("Authorization", "bee03bed6352400383d9a51ba325af2f")
+	req.Header.Add("Authorization", "Bearer bee03bed6352400383d9a51ba325af2f")
 	req.Header.Add("Content-Type", "application/json")
 
 	res, err := client.Do(req)

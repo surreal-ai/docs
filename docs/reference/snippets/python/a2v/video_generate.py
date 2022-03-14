@@ -8,7 +8,7 @@ payload = json.dumps({
   "audio_url": "https://example.com/audio.wav"
 })
 headers = {
-  'Authorization': 'bee03bed6352400383d9a51ba325af2f',
+  'Authorization': 'Bearer bee03bed6352400383d9a51ba325af2f',
   'Content-Type': 'application/json'
 }
 
