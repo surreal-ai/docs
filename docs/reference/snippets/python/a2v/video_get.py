@@ -4,7 +4,7 @@ url = "https://openapi.surreal-ai.com/v1/a2v/video.get?video_id=7895cd9a63564367
 
 payload = ""
 headers = {
-  'Authorization': 'bee03bed6352400383d9a51ba325af2f'
+  'Authorization': 'Bearer bee03bed6352400383d9a51ba325af2f'
 }
 
 response = requests.request("GET", url, headers=headers, data=payload)
