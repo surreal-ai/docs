@@ -1,5 +1,5 @@
 var myHeaders = new Headers();
-myHeaders.append("Authorization", "bee03bed6352400383d9a51ba325af2f");
+myHeaders.append("Authorization", "Bearer bee03bed6352400383d9a51ba325af2f");
 
 var requestOptions = {
   method: 'GET',
