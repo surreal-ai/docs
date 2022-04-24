@@ -1,13 +1,13 @@
 module.exports = {
   base: '/docs/',
   lang: 'en-US',
-  title: 'Surreal Engine API [alpha]',
-  description: 'Surreal Engine API [alpha]',
+  title: 'Surreal Engine API [Beta]',
+  description: 'Surreal Engine API [Beta]',
   seviceWorker: true,
   locales: {
     "/": {
       lang: "en-US",
-      title: "Surreal Engine API [alpha]",
+      title: "Surreal Engine API [Beta]",
     },
   },
   plugins: [

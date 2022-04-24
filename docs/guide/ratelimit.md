@@ -4,7 +4,7 @@ title: Rate limits
 
 # Rate limits
 
-Surreal Engine rely on rate limits to pleasant experience for end users and developers.
+Surreal Engine rely on rate limits to ensure best experience for developers.
 
 For now, Surreal Engine would limit each developers' API call by 30 requests/per minute.
 

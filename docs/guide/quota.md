@@ -4,4 +4,4 @@ title: Quota
 
 # Quota
 
-Surreal Engine provider **100,000** times API call for each validated developers.
+During the Beta release period, Surreal Engine provides **100 FREE** times API calls for each validated developers.
