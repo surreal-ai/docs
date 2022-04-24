@@ -14,8 +14,11 @@ This API is **Realtime API**.
 It will return all supported avatars in our system.
 
 ### Request
+
 **Header**
+
 - `Authorization: Bearer <<YOUR_TOKEN>>`
+
 Require no arguments.
 
 ### Response
@@ -65,13 +68,19 @@ GET /v1/a2v/avatar-pose.list?avatar_id=AVATAR_ID
 ```
 
 This API is **Realtime API**.
+
 It will return all supported poses information for the given avatar_id in our system.
 
 ### Request
+
 **Header**
+
 - `Authorization: Bearer <<YOUR_TOKEN>>`
+
 **Query Parameter**
+
 `avatar_id` (String type)
+
 ### Response
 
 ```json
@@ -96,9 +105,12 @@ POST /v1/a2v/video.generate
 This API is **task API***.
 
 ### Request
+
 **Header**
+
 - `Authorization: Bearer <<YOUR_TOKEN>>`
 - `Content-Type: application/json`
+
 **Body**
 ```json
 {
@@ -158,10 +170,15 @@ GET /v1/a2v/video.get
 This API is **Realtime API**.
 
 ### Request
+
 **Header**
+
 - `Authorization: Bearer <<YOUR_TOKEN>>`
+
 **Query Parameter**
+
 - `video_id` (querystring): The generating video ID.
+
 
 ### Response
 
