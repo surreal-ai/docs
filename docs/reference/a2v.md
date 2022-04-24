@@ -4,16 +4,20 @@ title: A2V API
 
 # Audio to Video
 
-## List all characters
+## List all avatars
 
 ```
-GET /v1/a2v/character.list
+GET /v1/a2v/avatar.list
 ```
 
 This API is **Realtime API**.
-It will return all supported characters in our system.
+It will return all supported avatars in our system.
 
 ### Request
+
+**Header**
+
+- `Authorization: Bearer <<YOUR_TOKEN>>`
 
 Require no arguments.
 
@@ -24,11 +28,7 @@ Require no arguments.
   "code": 0,
   "data": [
     {
-      "model_id": "eva_a0008",
-      "name": "Eva 01",
-      "display_name": "Eva 01",
-      "gender": "female",
-      "preview_url": "https://surreal.oss-cn-shenzhen-internal.aliyuncs.com/"
+      TODO: @aiden
     }
   ],
   "message": "success"
@@ -61,6 +61,40 @@ Require no arguments.
 
 ::::
 
+## List all avatar poses
+
+```
+GET /v1/a2v/avatar-pose.list?avatar_id=AVATAR_ID
+```
+
+This API is **Realtime API**.
+
+It will return all supported poses information for the given avatar_id in our system.
+
+### Request
+
+**Header**
+
+- `Authorization: Bearer <<YOUR_TOKEN>>`
+
+**Query Parameter**
+
+`avatar_id` (String type)
+
+### Response
+
+```json
+{
+  "code": 0,
+  "data": [
+    {
+      TODO: @aiden
+    }
+  ],
+  "message": "success"
+}
+```
+
 
 ## Generate video by voice
 
@@ -72,13 +106,21 @@ This API is **task API***.
 
 ### Request
 
+**Header**
+
+- `Authorization: Bearer <<YOUR_TOKEN>>`
+- `Content-Type: application/json`
+
+**Body**
 ```json
 {
-    "model_id": "eva_a0008",
+    "pose_id": "eva_a0008",
     "audio_url": "https://example.com/audio"
 }
 ```
 
+- `pose_id` (required): The pose id of the avatar.
+- `audio_url` (required): A downloadable audio url.
 ### Response
 
 ```json
@@ -129,18 +171,26 @@ This API is **Realtime API**.
 
 ### Request
 
+**Header**
+
+- `Authorization: Bearer <<YOUR_TOKEN>>`
+
+**Query Parameter**
+
 - `video_id` (querystring): The generating video ID.
+
 
 ### Response
 
 ```json
 {
-  "code": 0,
-  "data": {
-    "video_id": "7895cd9a63564367b0c7b06e6837b5c6",
-    "video_url": "https://surreal.oss-accelerate.aliyuncs.com/audio/1490087da1c1476c8561fdc7b8a2fa4c.wav"
-  },
-  "message": "success"
+    "code":0,
+    "data":{
+        "video_id":"<<VIDEO_ID>>",
+        "status":"finished",
+        "video_url":VIDEO_DOWNLOAD_URL
+    },
+    "message":"success"
 }
 
 ```

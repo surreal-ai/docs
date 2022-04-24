@@ -15,47 +15,47 @@ It will return all supported voice in our system.
 
 ### Request
 
+**Header**
+
+- `Authorization: Bearer <<YOUR_TOKEN>>`
+
 Require no arguments.
 
 ### Response
 
 ```json
 {
-  "code": 0,
-  "message": "success",
-  "data": [
-    {
-      "name": "en-US-Wavenet-A",
-      "gender": "male",
-      "language": "English",
-      "locale": "en-US"
-    },
-    {
-      "name": "en-US-Wavenet-B",
-      "gender": "male",
-      "language": "English",
-      "locale": "en-US"
-    },
-    {
-      "name": "en-US-Wavenet-C",
-      "gender": "female",
-      "language": "English",
-      "locale": "en-US"
-    },
-    {
-      "name": "en-US-Wavenet-D",
-      "gender": "male",
-      "language": "English",
-      "locale": "en-US"
-    }
-  ]
+    "code": 0,
+    "data":
+    [
+        {
+            "voice_name": "Ekram G.",
+            "gender": "Male",
+            "language": "Arabic",
+            "locale": "ar-SA",
+            "preview_url": "https://lovo-assets.s3.us-west-2.amazonaws.com/skin_sample/1625732273462.wav",
+            "tags": "Middle-Aged,E-learning & Presentations,Explainer Videos"
+        },
+        ...,
+        {
+            "voice_name": "Abbas A.",
+            "gender": "Male",
+            "language": "Arabic",
+            "locale": "ar-SA",
+            "preview_url": "https://lovo-assets.s3.us-west-2.amazonaws.com/skin_sample/1625732265612.wav",
+            "tags": "Young Adult,Ads,E-learning & Presentations,Product demos,Explainer Videos"
+        }
+    ],
+    "message": "success"
 }
 ```
 
-- `name`: The unique name of this voice. This is important for later API calls.
+- `voice`: The unique name of this voice. This is important for later API calls.
 - `gender`: The gender of the voice.
 - `language`: The language of the voice.
 - `locale`: The locale code for ths voice.
+- `preview_url`: The downloadable demo audio url to download.
+- `tags`: The attributes of the voice.
 
 ### Examples
 
@@ -92,9 +92,16 @@ POST /v1/tts/voice.generate
 ```
 
 This API is **Realtime API**.
+
 It will return the URL of generated audio.
 
 ### Request
+
+**Header**
+
+- `Authorization: Bearer <<YOUR_TOKEN>>`
+
+**Body**
 
 ```json
 {
@@ -106,13 +113,14 @@ It will return the URL of generated audio.
 - `text` (required): The text to be speeched.
 - `voice_name`: The name of voice to be used.
 
+
 ### Response
 
 ```json
 {
   "code": 0,
   "data": {
-    "url": "https://surreal.oss-accelerate.aliyuncs.com/audio/1490087da1c1476c8561fdc7b8a2fa4c.wav"
+    "url": AUDIO_URL
   },
   "message": "success"
 }
