@@ -2,9 +2,16 @@ module.exports = [
   {
     title: "Overview",
     path: "/overview/",
+    collapsable: false,
   },
   {
-    title: "Usage Guide",
+    title: "Core Concepts",
+    path: "/concepts/",
+    collapsable: false,
+  },
+  {
+    title: "Developer Guide",
+    collapsable: false,
     children: [
       "/guide/basic.md",
       "/guide/ratelimit.md",
@@ -13,6 +20,7 @@ module.exports = [
   },
   {
     title: "Reference",
+    collapsable: false,
     children: [
       "/reference/api-token.md",
       "/reference/tts.md",
