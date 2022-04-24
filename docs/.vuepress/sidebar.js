@@ -14,6 +14,9 @@ module.exports = [
     collapsable: false,
     children: [
       "/guide/basic.md",
+      "/guide/authentication.md",
+      "/guide/tts.md",
+      "/guide/a2v.md",
       "/guide/ratelimit.md",
       "/guide/quota.md",
     ],
