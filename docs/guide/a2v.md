@@ -19,7 +19,63 @@ https://openapi.surreal-ai.com/v1/a2v/avatar.list \
 You should get the response like this:
 
 ```json
-TODO @aiden
+{
+    "code": 0,
+    "data": [
+        {
+            "id": 1,
+            "avatar_type": "cg_human",
+            "name": "jason",
+            "gender": "male",
+            "display_name": "Jason",
+            "preview_url": "https://surreal.oss-cn-shenzhen.aliyuncs.com/tahoe_virtual_char%2Fcg%2Fv1%2F01_jason%2Ftarget.png?Expires=1650862302&OSSAccessKeyId=LTAI4FhUZsa1YYumWbTWusLN&Signature=829%2F1AdADAmkCPinl0C5ch3KCIs%3D",
+            "poses": [
+                {
+                    "pose_id": "01_jason",
+                    "name": "Jason",
+                    "preview_url": "https://surreal.oss-cn-shenzhen.aliyuncs.com/tahoe_virtual_char%2Fcg%2Fv1%2F01_jason%2Ftarget.png?Expires=1650862302&OSSAccessKeyId=LTAI4FhUZsa1YYumWbTWusLN&Signature=829%2F1AdADAmkCPinl0C5ch3KCIs%3D"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "avatar_type": "cg_human",
+            "name": "sooyon",
+            "gender": "female",
+            "display_name": "Sooyon",
+            "preview_url": "https://surreal.oss-cn-shenzhen.aliyuncs.com/tahoe_virtual_char%2Fcg%2Fv1%2F02_sooyon%2Ftarget.png?Expires=1650862302&OSSAccessKeyId=LTAI4FhUZsa1YYumWbTWusLN&Signature=P%2FVIGKQ0d0ky1QmepEif6Cbsuvc%3D",
+            "poses": [
+                {
+                    "pose_id": "02_sooyon",
+                    "name": "Sooyon",
+                    "preview_url": "https://surreal.oss-cn-shenzhen.aliyuncs.com/tahoe_virtual_char%2Fcg%2Fv1%2F02_sooyon%2Ftarget.png?Expires=1650862302&OSSAccessKeyId=LTAI4FhUZsa1YYumWbTWusLN&Signature=P%2FVIGKQ0d0ky1QmepEif6Cbsuvc%3D"
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "avatar_type": "human",
+            "name": "peter",
+            "gender": "male",
+            "display_name": "Peter",
+            "preview_url": "https://surreal.oss-cn-shenzhen.aliyuncs.com/tahoe_virtual_char%2Fv3%2Fkem_13%2Ftarget.png?Expires=1650862302&OSSAccessKeyId=LTAI4FhUZsa1YYumWbTWusLN&Signature=Ob9yhXsQ5EOttfMLNPD5PMeKDC8%3D",
+            "poses": [
+                {
+                    "pose_id": "kem_03",
+                    "name": "Peter 03",
+                    "preview_url": "https://surreal.oss-cn-shenzhen.aliyuncs.com/tahoe_virtual_char%2Fv3%2Fkem_03%2Ftarget.png?Expires=1650862302&OSSAccessKeyId=LTAI4FhUZsa1YYumWbTWusLN&Signature=TIFjfaZsKNuYkA1lOWzwKlYap6A%3D"
+                },
+                {
+                    "pose_id": "kem_03",
+                    "name": "Peter 01",
+                    "preview_url": "https://surreal.oss-cn-shenzhen.aliyuncs.com/tahoe_virtual_char%2Fv3%2Fkem_13%2Ftarget.png?Expires=1650862302&OSSAccessKeyId=LTAI4FhUZsa1YYumWbTWusLN&Signature=Ob9yhXsQ5EOttfMLNPD5PMeKDC8%3D"
+                }
+            ]
+        },
+        ...
+
+    ]
+}
 ```
 
 
@@ -29,14 +85,28 @@ Pick one avatar you like and list all poses of it with following command:
 
 ```bash
 curl -X GET \
-https://openapi.surreal-ai.com/v1/a2v/avatar-pose.list \
+https://openapi.surreal-ai.com/v1/a2v/avatar-pose.list?avatar_id=<<AVATAR_ID>> \
 -H 'Authorization: Bearer <<YOUR_TOKEN>>'
 ```
 
 The expected resopnse will be:
 
 ```json
-TODO @aiden
+{
+    "code": 0,
+    "data": [
+        {
+            "pose_id": "kem_03",
+            "name": "Peter 03",
+            "preview_url": "https://surreal.oss-cn-shenzhen.aliyuncs.com/tahoe_virtual_char%2Fv3%2Fkem_03%2Ftarget.png?Expires=1650862302&OSSAccessKeyId=LTAI4FhUZsa1YYumWbTWusLN&Signature=TIFjfaZsKNuYkA1lOWzwKlYap6A%3D"
+        },
+        {
+            "pose_id": "kem_03",
+            "name": "Peter 01",
+            "preview_url": "https://surreal.oss-cn-shenzhen.aliyuncs.com/tahoe_virtual_char%2Fv3%2Fkem_13%2Ftarget.png?Expires=1650862302&OSSAccessKeyId=LTAI4FhUZsa1YYumWbTWusLN&Signature=Ob9yhXsQ5EOttfMLNPD5PMeKDC8%3D"
+        }
+    ]
+}
 ```
 
 
