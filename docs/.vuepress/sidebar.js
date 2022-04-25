@@ -31,7 +31,7 @@ module.exports = [
     ]
   },
   {
-    title: "Discord",
+    title: "Join Discord",
     path: "https://discord.gg/R9URkXm6ZQ"
   }
   /**
