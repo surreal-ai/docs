@@ -70,9 +70,9 @@ The reponse should be returned in a few seconds, the latency is closely relative
 {
 	"code":0,
 	"data": {
-		"url":AUDIO_URL_TO_DOWNLOAD
-	},"
-	message":"success"
+		"url":"AUDIO_URL_TO_DOWNLOAD"
+	},
+	"message":"success"
 }
 ```
 
