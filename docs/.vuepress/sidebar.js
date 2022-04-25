@@ -30,6 +30,10 @@ module.exports = [
       "/reference/a2v.md",
     ]
   },
+  {
+    title: "Discord",
+    path: "https://discord.gg/R9URkXm6ZQ"
+  }
   /**
   {
     title: "Examples",
