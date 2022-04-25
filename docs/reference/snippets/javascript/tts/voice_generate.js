@@ -4,7 +4,7 @@ myHeaders.append("Content-Type", "application/json");
 
 var raw = JSON.stringify({
   "text": "Hello, Surreal Engine",
-  "voice_name": "en-US-Wavenet-A"
+  "voice_name": "Fabineu Topshot"
 });
 
 var requestOptions = {

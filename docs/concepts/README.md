@@ -2,6 +2,7 @@
 title: Core Concepts
 ---
 
+# Core Concepts
 
 **Text-To-Speech(TTS)**: The AI ability to generate audio contents with text inputs.
 
