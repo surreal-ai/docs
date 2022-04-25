@@ -13,7 +13,7 @@ func main() {
 	method := "POST"
 
 	payload := strings.NewReader(`{
-    "model_id": "eva_a0008",
+    "pose_id": "liza_a0008",
     "audio_url": "https://example.com/audio.wav"
 }`)
 

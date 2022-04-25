@@ -1,7 +1,7 @@
 OkHttpClient client = new OkHttpClient().newBuilder()
   .build();
 MediaType mediaType = MediaType.parse("application/json");
-RequestBody body = RequestBody.create(mediaType, "{\n    \"model_id\": \"eva_a0008\",\n    \"audio_url\": \"https://example.com/audio.wav\"\n}");
+RequestBody body = RequestBody.create(mediaType, "{\n    \"pose_id\": \"liza_a0008\",\n    \"audio_url\": \"https://example.com/audio.wav\"\n}");
 Request request = new Request.Builder()
   .url("https://openapi.surreal-ai.com/v1/a2v/video.generate")
   .method("POST", body)

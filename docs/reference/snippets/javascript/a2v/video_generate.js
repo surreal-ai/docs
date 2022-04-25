@@ -3,7 +3,7 @@ myHeaders.append("Authorization", "Bearer bee03bed6352400383d9a51ba325af2f");
 myHeaders.append("Content-Type", "application/json");
 
 var raw = JSON.stringify({
-  "model_id": "eva_a0008",
+  "pose_id": "liza_a0008",
   "audio_url": "https://example.com/audio.wav"
 });
 
