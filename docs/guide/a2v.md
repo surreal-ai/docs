@@ -114,7 +114,7 @@ The expected resopnse will be:
 
 It's time to feel the magic!
 
-Only two information are needed to send along with the HTTP request: audio_url and pose_id.
+Only two information are needed to send along with the HTTP request: `audio_url` and `pose_id`.
 
 Pick one pose id from the previous response and prepare an downloadable audio url (wav or mp3 format).
 
@@ -134,7 +134,7 @@ Response:
 {
 	"code":0,
 	"data": {
-		"video_id":<<VIDEO_ID>>,
+		"video_id":"<<VIDEO_ID>>",
         "status":"pending"
 	},
 	"message":"success"
@@ -150,7 +150,7 @@ Surreal Engine provides HTTP API to let you check the video generation status. S
 
 ```bash
 curl -X GET \
-https://openapi.surreal-ai.com/v1/a2v/video.get\?video_id\=<<VIDEO_ID>> \
+https://openapi.surreal-ai.com/v1/a2v/video.get?video_id=<<VIDEO_ID>> \
 -H 'Authorization: Bearer <<YOUR_TOKEN>>'
 ```
 
@@ -179,7 +179,7 @@ Surreal Enegine is still rendering your video, be patient and check it a few min
     "data":{
         "video_id":"<<VIDEO_ID>>",
         "status":"finished",
-        "video_url":VIDEO_DOWNLOAD_URL
+        "video_url":"VIDEO_DOWNLOAD_URL"
     },
     "message":"success"
 }
