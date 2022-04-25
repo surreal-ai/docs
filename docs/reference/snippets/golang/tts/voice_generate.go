@@ -13,7 +13,7 @@ func main() {
 
 	payload := strings.NewReader(`{
     "text": "Hello, Surreal Engine",
-    "voice_name": "en-US-Wavenet-A"
+    "voice_name": "Fabineu Topshot"
 }`)
 
 	client := &http.Client{}
