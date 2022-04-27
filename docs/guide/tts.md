@@ -58,7 +58,7 @@ Pick one of the voices returned in the previous step and send the following curl
 
 ```bash
 curl -X POST \
-https://openapi.dev.surreal-ai.com/v1/tts/voice.generate \
+https://openapi.surreal-ai.com/v1/tts/voice.generate \
 -H 'Authorization: Bearer <<YOUR_TOKEN>>' \
 -H 'Content-Type: application/json' \
 -d '{"text": "Hello, you are using Surreal Engine to generate your first audio content!", "voice_name": "Fabineu Topshot"}'
