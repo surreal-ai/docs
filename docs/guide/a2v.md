@@ -11,7 +11,7 @@ Surreal Engine has great AI capability to generate a talking avatar video. Let's
 Before you send a video generation request, you need to send a HTTP request to Surreal Engine to list all available poses. Remember to replace <<YOUR_TOKEN>> with the token you got from [https://open.surreal-ai.com](https://open.surreal-ai.com/).
 
 ```bash
-curl -X GET\
+curl -X GET \
 https://openapi.surreal-ai.com/v1/a2v/avatar.list \
 -H 'Authorization: Bearer <<YOUR_TOKEN>>'
 ```
