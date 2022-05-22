@@ -17,6 +17,8 @@ module.exports = [
       "/guide/authentication.md",
       "/guide/tts.md",
       "/guide/a2v.md",
+      "/guide/v2v.md",
+      "/guide/cg_avatar.md",
       "/guide/ratelimit.md",
       "/guide/quota.md",
     ],
