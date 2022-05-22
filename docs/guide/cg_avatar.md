@@ -80,7 +80,6 @@ Pick one avatar_id from all your generated avatars and prepare an downloadable a
 
 Note: If you don't have one, you can use Surreal Engine TTS to generate one!
 
-{"code":0,"data":{"video_id":"a7a05e90-f877-48de-88e1-4098aa29b6ce"},"message":"success"}
 ```bash
 curl -X POST \
 https://openapi.surreal-ai.com/v1/cg_avatar/video.generate \
