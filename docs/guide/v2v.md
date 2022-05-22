@@ -131,8 +131,6 @@ You should get response as follow:
     		
     ],
     "message":"success"
-    	}
-    	}
 }
 ```
 
