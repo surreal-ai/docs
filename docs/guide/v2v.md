@@ -35,7 +35,7 @@ Response:
 This is an offline processing api. It takes some time to render the video for you. Please remember the <<VIDEO_ID>> from the response and check the status in 10 minutes.
 
 
-### Get Video Status
+## Get Video Status
 
 Surreal Engine provides HTTP API to let you check the video generation status. Simply send the following command to Surreal Engine:
 
@@ -94,7 +94,7 @@ Your video is generated! Download your video and check it, you will love it.
 An error status indicates an internal error in Surreal Engine, feel free to report it in our discord channel and we'll look into it!
 
 
-### List Video
+## List Video
 
 You can list all your videos by simply sending the following command to Surreal Engine:
 
@@ -134,11 +134,14 @@ You should get response as follow:
 }
 ```
 
+## Limitations
+
 
 ### Audio size limitation
 
 During the Beta release period, the limit of the input audio length is **1 minute**.
 
 ### Image limitation
+
 To make a high quality talking photo video, the face area of your photo has to be larger than 160*160, other wise your generate request will fail with 400 error.
 
