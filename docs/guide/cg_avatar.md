@@ -27,10 +27,10 @@ You should get the response like this:
 {
     "code": 0,
     "data": {
-        "avatar_id":"YOUR_GENERATED_CG_AVATAR_ID",
+        "avatar_id":"<<YOUR_GENERATED_CG_AVATAR_ID>>",
         "gender":"male",
-        "preview_url":"THE_PREVIE_IMAGE_URL_OF_YOUR_CG_AVATAR"
-        },
+        "preview_url":"<<THE_PREVIE_IMAGE_URL_OF_YOUR_CG_AVATAR>>"
+    },
     "message": "success"
 }
 ```
@@ -54,15 +54,15 @@ The expected resopnse will be:
     "code": 0,
     "data": [
         {
-            "avatar_id":"YOUR_GENERATED_CG_AVATAR_ID_1",
+            "avatar_id":"<<YOUR_GENERATED_CG_AVATAR_ID_1>>",
             "gender":"female",
-            "preview_url":"THE_PREVIE_IMAGE_URL_OF_YOUR_CG_AVATAR"
+            "preview_url":"<<THE_PREVIE_IMAGE_URL_OF_YOUR_CG_AVATAR>>"
         },
         ...
         {
-            "avatar_id":"YOUR_GENERATED_CG_AVATAR_ID_N",
+            "avatar_id":"<<YOUR_GENERATED_CG_AVATAR_ID_N>>",
             "gender":"male",
-            "preview_url":"THE_PREVIE_IMAGE_URL_OF_YOUR_CG_AVATAR_N"
+            "preview_url":"<<THE_PREVIE_IMAGE_URL_OF_YOUR_CG_AVATAR_N>>"
         },
     ],
     "message": "success"
@@ -139,7 +139,7 @@ Surreal Enegine is still rendering your video, be patient and check it a few min
     "data":{
         "video_id":"<<VIDEO_ID>>",
         "status":"finished",
-        "video_url":"VIDEO_DOWNLOAD_URL"
+        "video_url":"<<VIDEO_DOWNLOAD_URL>>"
     },
     "message":"success"
 }
@@ -190,7 +190,7 @@ You should get response as follow:
         {
             "video_id":"<<VIDEO_ID>>",
             "status":"finished",
-            "video_url":"VIDEO_DOWNLOAD_URL"
+            "video_url":"<<VIDEO_DOWNLOAD_URL>>"
         },
         ...,
         {

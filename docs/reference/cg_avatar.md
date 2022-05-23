@@ -4,7 +4,7 @@ title: Talking CG Avatar API
 
 # Talking CG Avatar
 
-## Generate
+## Generate avatar
 
 ```
 POST /v1/cg_avatar/avatar.generate
@@ -35,9 +35,9 @@ It will return generate an CG Avatar based on the given head portrait image and 
   "code": 0,
   "data": [
     {
-      "avatar_id":"YOUR_GENERATED_CG_AVATAR_ID",
+      "avatar_id":"<<YOUR_GENERATED_CG_AVATAR_ID>>",
       "gender":"male" or "female",
-      "preview_url":"THE_PREVIE_IMAGE_URL_OF_YOUR_CG_AVATAR"}
+      "preview_url":"<<THE_PREVIE_IMAGE_URL_OF_YOUR_CG_AVATAR>>"}
   ],
   "message": "success"
 }
@@ -70,13 +70,13 @@ Require no arguments.
     {
       "avatar_id":"<<YOUR_GENERATED_CG_AVATAR_ID_1>>",
       "gender":"female",
-      "preview_url":"THE_PREVIE_IMAGE_URL_OF_YOUR_CG_AVATAR"
+      "preview_url":"<<THE_PREVIE_IMAGE_URL_OF_YOUR_CG_AVATAR>>"
     },
     ...
     {
       "avatar_id":"<<YOUR_GENERATED_CG_AVATAR_ID_N>>",
       "gender":"male",
-      "preview_url":"THE_PREVIE_IMAGE_URL_OF_YOUR_CG_AVATAR_N"
+      "preview_url":"<<THE_PREVIE_IMAGE_URL_OF_YOUR_CG_AVATAR_N>>"
     },
   ],
   "message": "success"
