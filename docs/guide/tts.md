@@ -78,6 +78,8 @@ The reponse should be returned in a few seconds, the latency is closely relative
 
 Congratulations, your audio is generated, you can download it and share it anywhere.
 
+## Limitations
+
 ### Input size limitation
 
 During the Beta release period, the limit of the input text length is **500** characters.
