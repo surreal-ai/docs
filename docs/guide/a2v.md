@@ -116,6 +116,8 @@ It's time to feel the magic!
 
 Only two information are needed to send along with the HTTP request: `audio_url` and `pose_id`.
 
+There's also one optional parameter: `with_mask`, which tells SurrealEngine whether you want the mask video alogn with the video result or not.
+
 Pick one pose id from the previous response and prepare an downloadable audio url (wav or mp3 format).
 
 Note: If you don't have one, you can use Surreal Engine TTS to generate one!
@@ -125,7 +127,7 @@ curl -X POST \
 https://openapi.surreal-ai.com/v1/a2v/video.generate \
 -H 'Authorization: Bearer <<YOUR_TOKEN>>' \
 -H 'Content-Type: application/json' \
--d '{"audio_url": <<DOWNLOADABLE_AUDIO_URL>>, "pose_id": "liza_a0008"}'
+-d '{"audio_url": <<DOWNLOADABLE_AUDIO_URL>>, "pose_id": "liza_a0008", "with_mask": <<BOOLEAN>>}'
 ```
 
 Response:
@@ -172,6 +174,7 @@ All possible responses are as follow:
 Surreal Enegine is still rendering your video, be patient and check it a few minutes later.
 
 **Finished**
+If `with_mask` is False or not provided:
 
 ```json
 {
@@ -179,13 +182,28 @@ Surreal Enegine is still rendering your video, be patient and check it a few min
     "data":{
         "video_id":"<<VIDEO_ID>>",
         "status":"finished",
-        "video_url":"VIDEO_DOWNLOAD_URL"
+        "video_url":"<<VIDEO_DOWNLOAD_URL>>"
+\    },
+    "message":"success"
+}
+```
+
+If `with_mask` is True:
+
+```json
+{
+    "code":0,
+    "data":{
+        "video_id":"<<VIDEO_ID>>",
+        "status":"finished",
+        "video_url":"<<VIDEO_DOWNLOAD_URL>>",
+        "mask_video_url": "<<MASK_VIDEO_URL>>"
     },
     "message":"success"
 }
 ```
 
-Your video is generated! Download your video and check it, you will love it.
+Your video is generated! Download your video and check it, you will love it. In addition, we also provide mask video for you so that you can put the talking avatar without background everywhere!
 
 **Error**
 
@@ -201,6 +219,47 @@ Your video is generated! Download your video and check it, you will love it.
 ```
 
 An error status indicates an internal error in Surreal Engine, feel free to report it in our discord channel and we'll look into it!
+
+### List Video
+
+You can list all your videos by simply sending the following command to Surreal Engine:
+
+```bash
+curl -X GET \
+https://openapi.surreal-ai.com/v1/a2v/video.list \
+-H 'Authorization: Bearer <<YOUR_TOKEN>>'
+```
+
+This will return a list of videos with various status: `in_progressing`, `finished`, `error` etc.
+
+You should get response as follow:
+
+**In_Progressing**
+
+```json
+{
+    "code":0,
+    "data":[
+        {
+            "video_id":"<<VIDEO_ID>>",
+            "status":"in_progressing"
+        },
+        {
+            "video_id":"<<VIDEO_ID>>",
+            "status":"finished",
+            "video_url":"<<VIDEO_DOWNLOAD_URL>>",
+            "mask_video_url": "<<MASK_VIDEO_DOWNLOAD_URL>>"
+        },
+        ...,
+        {
+            "video_id":"<<VIDEO_ID>>",
+            "status":"error"
+        },
+            
+    ],
+    "message":"success"
+}
+```
 
 
 ### Audio size limitation
