@@ -179,8 +179,8 @@ Surreal Enegine is still rendering your video, be patient and check it a few min
     "data":{
         "video_id":"<<VIDEO_ID>>",
         "status":"finished",
-        "video_url":"VIDEO_DOWNLOAD_URL",
-        "mask_video_url": "MASK_VIDEO_URL"
+        "video_url":"<<VIDEO_DOWNLOAD_URL>>",
+        "mask_video_url": "<<MASK_VIDEO_URL>>"
     },
     "message":"success"
 }
@@ -230,8 +230,8 @@ You should get response as follow:
         {
             "video_id":"<<VIDEO_ID>>",
             "status":"finished",
-            "video_url":"VIDEO_DOWNLOAD_URL",
-            "mask_video_url": "MASK_VIDEO_DOWNLOAD_URL"
+            "video_url":"<<VIDEO_DOWNLOAD_URL>>",
+            "mask_video_url": "<<MASK_VIDEO_DOWNLOAD_URL>>"
         },
         ...,
         {
