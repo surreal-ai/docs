@@ -30,6 +30,8 @@ module.exports = [
       "/reference/api-token.md",
       "/reference/tts.md",
       "/reference/a2v.md",
+      "/reference/v2v.md",
+      "/reference/cg_avatar.md",
     ]
   },
   {
