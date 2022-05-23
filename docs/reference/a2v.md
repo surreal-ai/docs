@@ -102,7 +102,7 @@ It will return all supported poses information for the given avatar_id in our sy
 POST /v1/a2v/video.generate
 ```
 
-This API is **task API***.
+This API is **Offline Processing API***.
 
 ### Request
 
@@ -114,20 +114,23 @@ This API is **task API***.
 **Body**
 ```json
 {
-    "pose_id": "eva_a0008",
+    "pose_id": "<<POSE_ID>>",
     "audio_url": "https://example.com/audio"
+    "with_mask": "<<BOOLEAN>>(Optional)"
 }
 ```
 
-- `pose_id` (required): The pose id of the avatar.
-- `audio_url` (required): A downloadable audio url.
+- `pose_id` (string, required): The pose id of the avatar.
+- `audio_url` (string, required): A downloadable audio url.
+- `with_mask` (boolean, optional, default: False): Tells SurrealEngine whether a mask video url should be provided along with the video result.
 ### Response
 
 ```json
 {
   "code": 0,
   "data": {
-    "video_id": "7895cd9a63564367b0c7b06e6837b5c6"
+    "video_id": "<<VIDEO_ID>>"",
+    "status": "pending"
   },
   "message": "success",
 }
@@ -188,7 +191,8 @@ This API is **Realtime API**.
     "data":{
         "video_id":"<<VIDEO_ID>>",
         "status":"finished",
-        "video_url":VIDEO_DOWNLOAD_URL
+        "video_url":"<<VIDEO_DOWNLOAD_URL>>",
+        "mask_video_url":"<<MASK_VIDEO_DOWNLOAD_URL>>"
     },
     "message":"success"
 }
@@ -222,3 +226,43 @@ This API is **Realtime API**.
 ::::
 
 
+## List all videos
+
+```
+GET /v1/a2v/video.list
+```
+
+This API is **Realtime API**.
+
+### Request
+
+**Header**
+
+- `Authorization: Bearer <<YOUR_TOKEN>>`
+
+Require no arguments.
+
+### Response
+
+```json
+{
+    "code":0,
+    "data":[
+        {
+          "video_id":"<<VIDEO_ID>>",
+          "status":"finished",
+          "video_url":"<<VIDEO_DOWNLOAD_URL>>",
+          "mask_video_url":"<<MASK_VIDEO_DOWNLOAD_URL>>"
+        },
+        ...,
+        {
+          "video_id":"<<VIDEO_ID>>",
+          "status":"finished",
+          "video_url":"<<VIDEO_DOWNLOAD_URL>>",
+          "mask_video_url":"<<MASK_VIDEO_DOWNLOAD_URL>>"
+        }
+    ],
+    "message":"success"
+}
+
+```

@@ -18,3 +18,7 @@ title: Core Concepts
 **Realtime API**: Process AI task immediately, and return the result in the HTTP response within a few seconds.
 
 **Offline Processing API**: This kind of AI task will take more time to process, usually 10-30 minutes. You can send status check http request to Surreal Engine to get the video generation status.
+
+**Talking Photo**: The AI ability to make the human in with provided image talking with audio inputs.
+
+**Talking CG Avatar**: The AI ability to generate your own cg avatar from your photo and animate it to talk with audio inputs.
