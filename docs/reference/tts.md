@@ -110,8 +110,8 @@ It will return the URL of generated audio.
 }
 ```
 
-- `text` (required): The text to be speeched.
-- `voice_name`: The name of voice to be used.
+- `text` (string, required): The text to be speeched.
+- `voice_name` (string, required): The name of voice to be used.
 
 
 ### Response
@@ -120,7 +120,7 @@ It will return the URL of generated audio.
 {
   "code": 0,
   "data": {
-    "url": AUDIO_URL
+    "url": "<<AUDIO_URL>>"
   },
   "message": "success"
 }

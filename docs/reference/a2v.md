@@ -116,11 +116,13 @@ This API is **Offline Processing API***.
 {
     "pose_id": "<<POSE_ID>>",
     "audio_url": "https://example.com/audio"
+    "with_mask": "<<BOOLEAN>>(Optional)"
 }
 ```
 
-- `pose_id` (required): The pose id of the avatar.
-- `audio_url` (required): A downloadable audio url.
+- `pose_id` (string, required): The pose id of the avatar.
+- `audio_url` (string, required): A downloadable audio url.
+- `with_mask` (boolean, optional, default: False): Tells SurrealEngine whether a mask video url should be provided along with the video result.
 ### Response
 
 ```json

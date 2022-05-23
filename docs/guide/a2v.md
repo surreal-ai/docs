@@ -116,6 +116,8 @@ It's time to feel the magic!
 
 Only two information are needed to send along with the HTTP request: `audio_url` and `pose_id`.
 
+There's also one optional parameter: `with_mask`, which tells SurrealEngine whether you want the mask video alogn with the video result or not.
+
 Pick one pose id from the previous response and prepare an downloadable audio url (wav or mp3 format).
 
 Note: If you don't have one, you can use Surreal Engine TTS to generate one!
@@ -125,7 +127,7 @@ curl -X POST \
 https://openapi.surreal-ai.com/v1/a2v/video.generate \
 -H 'Authorization: Bearer <<YOUR_TOKEN>>' \
 -H 'Content-Type: application/json' \
--d '{"audio_url": <<DOWNLOADABLE_AUDIO_URL>>, "pose_id": "liza_a0008"}'
+-d '{"audio_url": <<DOWNLOADABLE_AUDIO_URL>>, "pose_id": "liza_a0008", "with_mask": <<BOOLEAN>>}'
 ```
 
 Response:
@@ -172,6 +174,21 @@ All possible responses are as follow:
 Surreal Enegine is still rendering your video, be patient and check it a few minutes later.
 
 **Finished**
+If `with_mask` is False or not provided:
+
+```json
+{
+    "code":0,
+    "data":{
+        "video_id":"<<VIDEO_ID>>",
+        "status":"finished",
+        "video_url":"<<VIDEO_DOWNLOAD_URL>>"
+\    },
+    "message":"success"
+}
+```
+
+If `with_mask` is True:
 
 ```json
 {

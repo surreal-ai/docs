@@ -26,7 +26,7 @@ It will return generate an CG Avatar based on the given head portrait image and 
 }
 ```
 
-- `image_url` (required): A downloadable image url that has a recognizable human face.
+- `image_url` (string, required): A downloadable image url that has a recognizable human face.
 
 ### Response
 
@@ -107,8 +107,8 @@ This API is **Offline Processing API***.
 }
 ```
 
-- `avatar_id` (required): The id of avatar generated through /v1/cg_avatar/avatar.generate API.
-- `audio_url` (required): A downloadable audio url.
+- `avatar_id` (string, required): The id of avatar generated through /v1/cg_avatar/avatar.generate API.
+- `audio_url` (string, required): A downloadable audio url.
 
 ### Response
 

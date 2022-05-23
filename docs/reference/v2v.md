@@ -28,8 +28,8 @@ This API is **task API***.
 }
 ```
 
-- `image_url` (required): A downloadable image url.
-- `audio_url` (required): A downloadable audio url.
+- `image_url` (string, required): A downloadable image url.
+- `audio_url` (string, required): A downloadable audio url.
 
 ### Response
 
