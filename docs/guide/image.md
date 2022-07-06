@@ -52,12 +52,12 @@ Response:
 }
 ```
 
-## Transform/Swap Face
+## Swap Face
 
 Swap faces of the analyzed image by uploaded faces.
 
 ```bash
-curl -X POST https://openapi.dev.surreal-ai.com/v1/image/face.transform
+curl -X POST https://openapi.dev.surreal-ai.com/v1/image/face.swap
    -H 'Content-Type: application/json'
    -H 'Authorization: Bearer <<TOKEN>>'
    -d '{"analysis_id": "<<ANALYSIS_ID>>", "faces": {"0": "<<FACE_ID>>"}}'
@@ -69,8 +69,8 @@ Response:
     "message": "success",
     "code": "0",
     "data": {
-        "transformation_id": "<<TRANSFORMATION_ID>>",
-        "image_url": "<<TRANSFORMED_IMAGE_URL>>"
+        "face_swap_id": "<<FACE_SWAP_ID>>",
+        "image_url": "<<FACE_SWAPPED_IMAGE_URL>>"
     }
 }
 ```
