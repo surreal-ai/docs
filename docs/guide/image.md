@@ -9,7 +9,7 @@ title: Image
 Analyzes the given image and extracts the face from it.
 
 ```bash
-curl -X POST https://openapi.dev.surreal-ai.com/v1/face.upload
+curl -X POST https://openapi.dev.surreal-ai.com/v1/image/face.upload
    -H 'Content-Type: application/json'
    -H 'Authorization: Bearer <<TOKEN>>'
    -d '{"image_url": "<<DOWNLOADABLE_IMAGE_URL>>"}'
