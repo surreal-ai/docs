@@ -169,7 +169,7 @@ You can list all your videos by simply sending the following command to Surreal 
 
 ```bash
 curl -X GET \
-https://openapi.surreal-ai.com/v1/cg_avatars/video.list \
+https://openapi.surreal-ai.com/v1/cg_avatar/video.list \
 -H 'Authorization: Bearer <<YOUR_TOKEN>>'
 ```
 
