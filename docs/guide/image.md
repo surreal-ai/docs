@@ -57,7 +57,7 @@ Response:
 Swap faces of the analyzed image by uploaded faces.
 
 ```bash
-curl -X POST https://openapi.dev.surreal-ai.com/v1/image/face.swap
+curl -X POST https://openapi.surreal-ai.com/v1/image/face.swap
    -H 'Content-Type: application/json'
    -H 'Authorization: Bearer <<TOKEN>>'
    -d '{"analysis_id": "<<ANALYSIS_ID>>", "faces": {"0": "<<FACE_ID>>"}}'
